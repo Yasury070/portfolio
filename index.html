@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yasir Sadik Chowdhury | CSE Student & Entrepreneur</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">YSC<span>.</span></a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#entrepreneurship" class="nav-link">Savoria</a>
+        <a href="#leadership" class="nav-link">Extracurriculars</a>
+        <a href="#contact" class="nav-link btn-contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">BSc in Computer Science & Engineering</span>
+          <h1 class="hero-title">Hi, I'm <span class="highlight">Yasir Sadik Chowdhury</span></h1>
+          <p class="hero-description">
+            4th Semester CSE undergraduate at the Islamic University of Technology (IUT). Passionate learner exploring advanced mathematics, object-oriented programming, and systems design, while balancing real-world leadership as the founder of Savoria Restaurant.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Get In Touch</a>
+          </div>
+          <div class="social-links">
+            <a href="https://facebook.com/yasir.sadik.90" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:yasirsadik@iut-dhaka.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="image-frame">
+            <img src="assets/profile.jpg" alt="Yasir Sadik Chowdhury" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About & Education</h2>
+          <p class="section-subtitle">A blend of academic rigor, technical skills, and continuous personal growth</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3><i class="fa-solid fa-user"></i> Profile Summary</h3>
+            <p>
+              I'm a passionate learner, always exploring and grasping new skills wherever I can. I'm committed to giving my best in everything I do and continuously improving myself. As a humble and adaptable individual, I welcome new challenges and see every mistake as an opportunity to grow.
+            </p>
+            
+            <div class="skills-block">
+              <h4>Core Technical Interests</h4>
+              <div class="tags">
+                <span class="tag">C++ / Object-Oriented Programming</span>
+                <span class="tag">Database Management Systems</span>
+                <span class="tag">Linear Algebra & Probability</span>
+                <span class="tag">Digital Logic & Circuit Design</span>
+                <span class="tag">Java / JavaFX</span>
+                <span class="tag">Data Analysis (Google Sheets/QUERY)</span>
+              </div>
+            </div>
+
+            <div class="skills-block" style="margin-top: 1.5rem;">
+              <h4>Soft Skills & Hobbies</h4>
+              <div class="tags">
+                <span class="tag">Communication</span>
+                <span class="tag">Teamwork</span>
+                <span class="tag">Time Management</span>
+                <span class="tag">Creativity</span>
+                <span class="tag">Leadership</span>
+                <span class="tag">Critical Thinking</span>
+                <span class="tag"><i class="fa-solid fa-plane"></i> Travelling</span>
+                <span class="tag"><i class="fa-solid fa-puzzle-piece"></i> Puzzles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Education Timeline</h3>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-date">Sep 2024 - Present</span>
+                <h4 class="timeline-title">BSc in Computer Science and Engineering</h4>
+                <p class="timeline-subtitle">Islamic University of Technology, Gazipur, Dhaka</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">Feb 2022 - Jun 2023</span>
+                <h4 class="timeline-title">Higher Secondary Certificate (HSC) - Science</h4>
+                <p class="timeline-subtitle">Notre Dame College, Dhaka</p>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-date">Jan 2015 - Nov 2021</span>
+                <h4 class="timeline-title">Secondary School Certificate (SSC) - Science</h4>
+                <p class="timeline-subtitle">Chittagong Collegiate School, Chittagong</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Academic Projects</h2>
+          <p class="section-subtitle">Comprehensive assignments spanning OOP, System Analysis, Algorithms, and Digital Logic</p>
+        </div>
+
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="software">Software & Games</button>
+          <button class="filter-btn" data-filter="systems">Systems & Algorithms</button>
+          <button class="filter-btn" data-filter="hardware">Hardware & Logic</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: CarbonDraw -->
+          <div class="project-card" data-category="software">
+            <div class="project-media">
+              <img src="assets/carbondraw.jpg" alt="CarbonDraw JavaFX Project" />
+              <div class="semester-tag">Semester 2-2</div>
+            </div>
+            <div class="project-info">
+              <h3>CarbonDraw: An Educational Climate Action Deck Builder</h3>
+              <p class="project-desc">A visual JavaFX project presented by Team EcoFx. The game features strategic infrastructure cards like Next-Gen Nuclear, Grid Scale Battery, Reforestation Initiatives, and Regenerative Agriculture to simulate environmental impact.</p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>Visual Computing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Ratatouille (Project Hail Savoria) -->
+          <div class="project-card" data-category="systems">
+            <div class="project-media">
+              <img src="assets/ratatouille-sad.jpg" alt="Ratatouille SAD Project" />
+              <div class="semester-tag">Semester 2-2</div>
+            </div>
+            <div class="project-info">
+              <h3>Ratatouille: The digital RAT under the chef's HAT</h3>
+              <p class="project-desc">CSE 4408 System Analysis and Design project (Project Hail Savoria). Mapped stakeholder problems, candidate keys, and business workflows to design a comprehensive digital management system for the Savoria restaurant model.</p>
+              <div class="project-tags">
+                <span>CSE 4408</span>
+                <span>System Analysis</span>
+                <span>Database Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: PGCB Power Grid Optimization -->
+          <div class="project-card" data-category="systems">
+            <div class="project-media">
+              <img src="assets/pgcb-algo.jpg" alt="PGCB Grid Optimization" />
+              <div class="semester-tag">Semester 2-2</div>
+            </div>
+            <div class="project-info">
+              <h3>PGCB Power Grid Load Shedding & Generation Mix Optimization</h3>
+              <p class="project-desc">Submitted on August 16, 2026, for CSE 4403 (Algorithms). Investigated algorithmic optimization for Bangladesh's power grid, balancing load shedding and generation mix using computational logic.</p>
+              <div class="project-tags">
+                <span>CSE 4403</span>
+                <span>Algorithms</span>
+                <span>Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Mini-SIS -->
+          <div class="project-card" data-category="software">
+            <div class="project-media">
+              <img src="assets/minisis.jpg" alt="Mini-SIS OOP Lab" />
+              <div class="semester-tag">Semester 2-1</div>
+            </div>
+            <div class="project-info">
+              <h3>Mini-SIS (Student Information System)</h3>
+              <p class="project-desc">An IUT SIS reimplementation on a minor scale for the OOP lab. Developed collaboratively by Team Syntax Terrors (Rayat Bin Nasir, Afraz Ahmed, Nafi Abrar Chowdhury, and myself) utilizing advanced C++ features like static members and operator overloading.</p>
+              <div class="project-tags">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>Team Project</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Shorojontro -->
+          <div class="project-card" data-category="software">
+            <div class="project-media">
+              <img src="assets/shorojontro.jpg" alt="Shorojontro Board Game" />
+              <div class="semester-tag">Semester 1-2</div>
+            </div>
+            <div class="project-info">
+              <h3>Shorojontro (ষড়যন্ত্র)</h3>
+              <p class="project-desc">CSE 4202 Structured Programming II project presentation. A strategic game engine featuring distinct characters (বীর বিক্রম, ব্রহ্মদৈত্য, জিনের বাদশাহ, ভলু ডাকাত, পটুকচন্দ্র) with unique abilities, integrated with C programming structures.</p>
+              <div class="project-tags">
+                <span>CSE 4202</span>
+                <span>C Programming</span>
+                <span>Game Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Digital Elevator Controller -->
+          <div class="project-card" data-category="hardware">
+            <div class="project-media">
+              <img src="assets/elevator-dld.jpg" alt="Digital Elevator Controller DLD" />
+              <div class="semester-tag">Semester 1-2</div>
+            </div>
+            <div class="project-info">
+              <h3>Digital Elevator System</h3>
+              <p class="project-desc">Digital Logic Design (DLD) lab assignment featuring complex circuitry mapped in Proteus. Modeled state changes, logic gates, and simulated seven-segment outputs to mimic mechanical elevator routing.</p>
+              <div class="project-tags">
+                <span>DLD</span>
+                <span>Proteus</span>
+                <span>Circuit Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Entrepreneurship Section (Savoria) -->
+    <section id="entrepreneurship" class="entrepreneur-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Entrepreneurship</h2>
+          <p class="section-subtitle">Bridging academic theory with real-world business execution</p>
+        </div>
+        <div class="entrepreneur-card">
+          <div class="entrepreneur-content">
+            <div class="business-header">
+              <span class="business-tag">Owner & Founder</span>
+              <h3>SAVORIA Restaurant, Chittagong</h3>
+              <span class="business-date">May 2025 - Present</span>
+              
+              <!-- Savoria Facebook Button -->
+              <a href="https://www.facebook.com/share/14iGGby5D51/" target="_blank" rel="noopener noreferrer" class="btn savoria-fb-btn">
+                <i class="fa-brands fa-facebook"></i> Visit Savoria on Facebook
+              </a>
+            </div>
+            <p>
+              <strong>SAVORIA — Excellence in Culinary & Hospitality</strong><br><br>
+              Step into a world of gourmet excellence and refined elegance at SAVORIA. Experience a meticulously curated menu, world-class hospitality, and an immersive atmosphere for an unforgettable dining experience.
+            </p>
+          </div>
+          
+          <!-- Savoria Media: Local Video with Custom Controls -->
+          <div class="entrepreneur-media">
+            <div class="savoria-video-wrapper">
+              <video id="savoria-local-video" autoplay loop muted playsinline class="savoria-local-video-element">
+                <source src="assets/1000113219.mp4" type="video/mp4">
+              </video>
+              
+              <!-- Invisible Overlay to Play/Pause on click -->
+              <div id="video-overlay" class="yt-overlay"></div>
+              
+              <!-- Custom Mute/Unmute Button -->
+              <button id="video-sound-btn" class="yt-sound-btn" aria-label="Toggle Sound">
+                <i class="fa-solid fa-volume-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="leadership" class="leadership-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Extracurricular Activities</h2>
+          <p class="section-subtitle">Consistent community engagement and organizational leadership</p>
+        </div>
+       <!-- Top Row: Big Image Cards -->
+        <div class="leadership-grid featured-grid">
+          <!-- Notre Dame Club General Secretary with Image -->
+          <div class="leadership-item has-image">
+            <div class="lead-image-wrapper">
+              <img src="assets/1000113200.jpg" alt="General Secretary - NDIURC" />
+            </div>
+            <div class="lead-details">
+              <h4>General Secretary</h4>
+              <p class="lead-org">Notre Dame International Understanding and Relation Club</p>
+              <span class="lead-date">2023 - Oct 2024</span>
+            </div>
+          </div>
+
+          <!-- NDCMUN Advisor with Image -->
+          <div class="leadership-item has-image">
+            <div class="lead-image-wrapper">
+              <img src="assets/1000113199.jpg" alt="Advisor - NDCMUN 2025" />
+            </div>
+            <div class="lead-details">
+              <h4>Advisor & USG of Administration</h4>
+              <p class="lead-org">NDCMUN25 (Advisor) | NDCMUN23 (USG)</p>
+              <span class="lead-date">Notre Dame College</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Rows: Smaller Icon Cards -->
+        <div class="leadership-grid">
+          <div class="leadership-item">
+            <div class="lead-icon"><i class="fa-solid fa-comments"></i></div>
+            <div class="lead-details">
+              <h4>EC PANEL</h4>
+              <p class="lead-org">IUT Debating Society</p>
+              <span class="lead-date">2024 - 2025</span>
+            </div>
+          </div>
+          <div class="leadership-item">
+            <div class="lead-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="lead-details">
+              <h4>Event Organizer</h4>
+              <p class="lead-org">Sagacity 3.0, NDC Intra MUN22</p>
+              <span class="lead-date">Notre Dame College</span>
+            </div>
+          </div>
+          <div class="leadership-item">
+            <div class="lead-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="lead-details">
+              <h4>Volunteer</h4>
+              <p class="lead-org">CodeRush 2025</p>
+              <span class="lead-date">IUT Computer Society</span>
+            </div>
+          </div>
+          <div class="leadership-item">
+            <div class="lead-icon"><i class="fa-solid fa-masks-theater"></i></div>
+            <div class="lead-details">
+              <h4>Executive Member</h4>
+              <p class="lead-org">Collegiates Cultural Club</p>
+              <span class="lead-date">Aug 2020 - Aug 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p class="section-subtitle">Reach out for academic collaborations or inquiries</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <a href="mailto:yasirsadik@iut-dhaka.edu">yasirsadik@iut-dhaka.edu</a>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <h4>Phone</h4>
+            <a href="tel:+8801600327467">01600327467</a>
+          </div>
+          <div class="contact-card">
+            <i class="fa-brands fa-facebook"></i>
+            <h4>Facebook</h4>
+            <a href="https://facebook.com/yasir.sadik.90" target="_blank" rel="noopener noreferrer">yasir.sadik.90</a>
+          </div>
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Location</h4>
+            <p>IUT-Gazipur, Dhaka</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Yasir Sadik Chowdhury (Born March 1, 2005). Hosted on GitHub Pages.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Image Modal Overlay -->
+  <div id="imageModal" class="image-modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="expandedImg">
+  </div>
+</body>
+</html>
