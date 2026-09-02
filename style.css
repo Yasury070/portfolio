@@ -19,6 +19,51 @@
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --border-radius: 12px;
 }
+/* ==========================================================================
+   Light Mode Variables & Toggle Button
+   ========================================================================== */
+body.light-mode {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --border-color: #e2e8f0;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --accent-primary: #0284c7; /* Darker blue for light mode contrast */
+  --accent-secondary: #4f46e5;
+  --accent-glow: rgba(2, 132, 199, 0.1);
+}
+
+body.light-mode .navbar {
+  background-color: rgba(248, 250, 252, 0.85);
+}
+
+body.light-mode .semester-tag {
+  background-color: rgba(248, 250, 252, 0.85);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-primary);
+  transform: scale(1.1);
+}
 
 * {
   margin: 0;

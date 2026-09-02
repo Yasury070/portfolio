@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Light/Dark Mode Toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  
+  if (themeToggle) {
+    const icon = themeToggle.querySelector('i');
+    
+    // Check local storage for saved preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      body.classList.add('light-mode');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      
+      if (body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        localStorage.setItem('theme', 'dark');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  }
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
 
