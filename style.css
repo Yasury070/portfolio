@@ -956,3 +956,29 @@ a:hover {
     min-height: 250px;
   }
 }
+/* ==========================================================================
+   Project Repository Links
+   ========================================================================== */
+.project-links {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.btn-project-link i {
+  font-size: 1.1rem;
+}
+
+.btn-project-link:hover {
+  color: var(--accent-primary);
+  transform: translateX(3px); /* Subtle slide effect on hover */
+}
